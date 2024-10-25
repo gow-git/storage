@@ -1,0 +1,11 @@
+{
+  "storage": {
+    "dbConfig": {
+      "host": "localhost",
+      "port": 5432,
+      "dbName": "demo",
+      "user": "demo",
+      "pass": "qwerty"
+    }
+  }
+}

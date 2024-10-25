@@ -1,0 +1,6 @@
+# Dependency directories
+node_modules
+logs
+eslint.config.js
+*.env
+.env
