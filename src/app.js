@@ -17,8 +17,13 @@
 const logger = require("./logger");
 const express = require("express");
 
+const errorMiddleware = require("./middleware/error");
+
 const PORT = process.env.PORT || 3000;
 const app = express();
+
+app.use(errorMiddleware.errorHandler404);
+app.use(errorMiddleware.errorHandler500);
 
 app.listen(PORT, () => {
   logger.info(`The storage API started in port ${PORT}`);
