@@ -4,7 +4,7 @@
   "description": "REST Storage API",
   "main": "app.js",
   "scripts": {
-    "start:dev": "PINO_LOG_LEVEL=info nodemon --env-file .development.env src/app",
+    "start:dev": "nodemon --env-file=.development.env src/app.js",
     "start:prod": "node --env-file .production.env src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
